@@ -1,0 +1,205 @@
+<!doctype-html>
+<html>
+
+    <head>
+        <!--bootstrap meta-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge"> <!--this is for IE specifically-->
+
+        <title>My Alpha Blog Home</title>
+        
+        <!--Bootstrap specific CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        
+        <style type="text/css">
+        
+            body {
+                position:relative;
+                margin:0;
+                padding:0;
+                text-align: center;
+            }
+            
+            
+            .navbar {
+                padding-bottom:0;
+            }
+            
+            /* i set margin-top in jquery, but what's a better way to make it responsive? right now it only works when size is fixed and page has to be refreshed for it to fix itself*/
+            .jumbotron {
+                margin-bottom: 0;
+                
+                background-image: url("https://images.unsplash.com/photo-1465205568425-23fdd3805e49?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=7e476dbc9096ec1c869bd2cb97d82c70");
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+            
+            #email {
+                width:300px;
+            }
+            
+            #about {
+                padding-bottom: 50px;
+                padding-top:50px;
+                margin-bottom:0;
+            }
+            
+            h5 {
+                font-weight: 200;
+                padding-bottom:50px;
+            }
+            
+            i {
+                padding-right:5px;
+                color:black;
+            }
+            
+            #downloadApp {
+                background-color:aqua;
+                
+                padding:150px !important;
+            }
+            
+            
+            
+            
+        </style>
+        
+    </head>   
+    
+    <body data-spy="scroll" data-target="#navbar-example" data-offset="70">
+        
+        <nav class="navbar navbar-fixed-top bg-faded navbar-light" id="navbar-example" role="navigation" >
+            <a class="navbar-brand" href="#">MyApp</a>
+            <ul class="nav navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#downloadApp">Download The App</a></li>
+            </ul>
+            <form class="form-inline pull-xs-right">
+                <input class="form-control" type="email" placeholder="Email">
+                <input class="form-control" type="password" placeholder="Password">
+                <button class="btn btn-success" type="submit">Login</button>
+            </form>
+            
+        </nav>
+        
+        
+        
+        <div class="jumbotron jumbotron-fluid" id="home">
+            <h1 class="display-3">My Alpha Blog!</h1>
+            <p class="lead">This is why YOU should subscribe to this fantastic blog!</p>
+            <hr class="m-y-2">
+            <p>Want to know more? Join our mailing list!</p>
+                
+            <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="email">Email address</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">@</div>
+                        <input class="form-control" type="email" id="email" placeholder="Your email">
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Sign up</button>
+            </form>
+        </div>
+        
+        
+        
+        
+        <div class="container" id="about">
+            <h1>Why This Blog is Awesome</h1>
+            <h5>Summary, once again, of your blog's awesomeness</h5>
+          
+            <div class="card-deck-wrapper">
+              <div class="card-deck">
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1462733441571-9312d0b53818?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=deb060f2ba359f2691166b4278ecdc5b" alt="Card image cap">
+                  <div class="card-block">
+                    
+                    <h4 class="card-title"><i class="fa fa-anchor" aria-hidden="true"></i>Card title</h4>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1462733441571-9312d0b53818?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=deb060f2ba359f2691166b4278ecdc5b" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title"><i class="fa fa-bicycle" aria-hidden="true"></i>Card title</h4>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1462733441571-9312d0b53818?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=deb060f2ba359f2691166b4278ecdc5b" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title"><i class="fa fa-birthday-cake" aria-hidden="true"></i>Card title</h4>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+        
+        <div class="container-fluid" id="downloadApp">
+      
+            <div class="row">
+          
+                <h2>Download the app!</h2>
+            
+                <p class="lead">Really, why should I download this app??</p>
+            
+                <p><a href=""><i class="fa fa-apple fa-5x" aria-hidden="true"></i></a></p>
+            
+            </div>
+            
+        </div>
+        
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+        
+        
+        <script type="text/javascript">
+            
+    //*****this all works when the page size is fixed, but it doesn't auto-scale when page is resized. have to refresh to get it back to working!!
+            var navPadding = parseInt($("#navbar-example").css("padding-top").split("px")[0]);
+            var navOffset = $("#navbar-example").height() + navPadding;
+            //console.log(navOffset);
+            var navOffsetString = navOffset.toString() + "px";
+            //console.log(navOffset);
+            
+            $(".jumbotron").css("margin-top",navOffsetString);
+            //console.log($(".jumbotron").css("padding-top"));
+            //console.log($("#navbar-example").height() + navPadding) + "px";
+            
+            $("#navbar-example ul li a").click(function(event) {
+                
+                //var navOffset = $("#navbar-example").height() + navPadding;//+35;
+                console.log($("#navbar-example").height());
+                console.log(parseInt($("#navbar-example").css("padding-top").split("px")[0]));
+                console.log(navOffset);
+                
+                var href = $(this).attr("href");
+
+                // Don't let the browser scroll, but still update the current address
+                // in the browser.
+                event.preventDefault();
+                window.location.hash = href;
+
+                // Explicitly scroll to where the browser thinks the element
+                // is, but apply the offset.
+                $(href)[0].scrollIntoView();
+                window.scrollBy(0, -navOffset);
+                
+            });
+            
+        </script>
+        
+    </body>
+
+</html>
